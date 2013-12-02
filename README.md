@@ -15,10 +15,11 @@ Currently the only officialy supported and tested underare QEMU Windows builds f
 
 QEMU linux binaries are not being used currently however you can still use one and it should work.
 
+
 Windows folder
 ==============
 
-Windows folder contains example startup scripts for target QEMU build.
-By default gdb server is being enabled so it allows connecting with IDA for debugging purposes for example.
+Windows folder contains example startup scripts for target QEMU build. Some scripts enable gdb server in QEMU for debugging purposes so you can use IDA to debug it. When using IDA with QEMU remember to enable gdb server for IPv4 since IDA can't use IPv6 to connect. 
 
+When running QEMU with provided scripts you need linux.img disk image file. By default we are using imiges available at: http://wiki.qemu.org/Testing
 
